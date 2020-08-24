@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noUnusedLocals": false,
+    "resolveJsonModule": true,
+    "paths": {
+      "~/*": ["./*", "./*/index"],
+      "@*": ["@*", "@*/index"]
+    },
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "target": "es2018",
+    "typeRoots": ["node_modules/@types", "types"],
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "isolatedModules": true,
+
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "checkJs": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true
+  },
+  "include": ["src", "test", "./types"],
+  "exclude": ["node_modules", "dist", "lib", "test", ".next"]
+}

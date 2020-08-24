@@ -1,0 +1,48 @@
+{
+  "name": "reservations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --transpile-only src/index.ts",
+    "db:migrate": "ts-node scripts/db.migrate.ts",
+    "db:migrate:down": "ts-node scripts/db.migrate.down.ts",
+    "build:schemas": "ts-node --transpile-only scripts/generateApolloSchemas.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-simple-import-sort": "^5.0.3",
+    "ts-node": "^8.10.2",
+    "ts-node-dev": "^1.0.0-pre.52",
+    "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "@types/compression": "^1.7.0",
+    "@types/lodash": "^4.14.157",
+    "@types/morgan": "^1.9.1",
+    "@types/pg": "^7.14.4",
+    "@types/umzug": "^2.2.3",
+    "apollo-server-cache-redis": "^1.2.2",
+    "apollo-server-express": "^2.15.1",
+    "apollo-server-plugin-response-cache": "^0.5.3",
+    "axios": "^0.20.0",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "dotenv": "^8.2.0",
+    "env-var": "^6.2.0",
+    "express": "^4.17.1",
+    "graphql-playground-middleware-express": "^1.7.18",
+    "lodash": "^4.17.20",
+    "morgan": "^1.10.0",
+    "nexus": "^0.25.0",
+    "pg": "7.4.3",
+    "sequelize": "4.44.3",
+    "umzug": "^2.3.0"
+  }
+}
